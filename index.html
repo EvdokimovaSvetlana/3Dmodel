@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SolarSystem</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Aclonica" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-theme.min.css">
+ <script src="bootstrap.min.js"></script>
+ <script src="jquery-3.3.1.min.js"></script>
+
+  </head>
+  <body onload="webGLStart();">
+    <canvas width="500" height="500"></canvas>
+    <div class="menu">
+     <button type="button" class="btn btn-menu btn-info">Info</button>
+     <ul class="nav nav-pills nav-stacked" role="tablist">
+       <li><button class="btn for-sun">Sun</button></li>
+       <li><button class="btn for-mercury">Mercury</button></li>
+       <li><button class="btn for-about">About</button></li>
+     </ul>
+    </div>
+    <div class="menu-for-object">
+    </div>
+    <div class="back-for-about">
+    </div>
+    <div class="mercury">
+        <center><h2>Mercury</h2></center>
+        <img src="images/img-close.png" class="btn btn-exit btn-exit-mercury">
+        <img class="mercury-mini" src="images/mercury-mini.png" width="150px">
+        <table>
+          <caption><center style="color: orange;">Physical characteristics</center></caption>
+          <tr><td>Mean radius</td> <td>2,439.7±1.0 km</td></tr>
+          <tr><td>Mass</td> <td>3.3011×10<sup>23</sup> kg</td></tr>
+          <tr><td>Surface area</td> <td>7.48×10<sup>7</sup> km<sup>2</sup></td></tr>
+          <tr><td>Volume</td>  <td>6.083×10<sup>10</sup> km</td></tr>
+          <tr><td>Mean density</td>  <td>5.427 g/cm<sup>3</sup></td></tr>
+          <tr><td>Surface gravity &nbsp;</td> <td>3.7 m/s<sup>2</sup></td></tr>
+        </table>
+        <table>
+          <caption><center style="color: orange;">Orbital characteristics</center></caption>
+          <tr><td>Aphelion</td> <td>0.466 697 AU/69,816,900 km</td></tr>
+          <tr><td>Perihelion</td> <td>0.307 499 AU/46,001,200 km</td></tr>
+          <tr><td>Semi-major axis</td> <td>0.387 098 AU/57,909,050 km</td></tr>
+          <tr><td>Eccentricity</td> <td>0.205 630</td></tr>
+          <tr><td>Average orbital speed</td> <td>47.362 km/s</td></tr>
+          <tr><td>Mean anomaly</td> <td>174.796°</td></tr>
+          <tr><td>Inclination</td> <td>7.005° to ecliptic</td></tr>
+          <tr><td>Argument of perihelion &nbsp;</td> <td>29.124°</td></tr>
+          <tr><td>Satellites</td> <td>None</td></tr>
+        </table>
+        <div class="settings">
+          <center>
+          <b>Style:</b><br>
+          <input type="image" class="mercury-text-1" src="images/mercury.jpg" width="50px" height="50px">
+          <input type="image" class="mercury-text-2" src="images/mercury1.jpg" width="50px" height="50px"><br>
+          Size : <input type="range" class="mercury-size" min="1" max="10" step="0.1" value="1"></center>
+        </div>
+    </div>
+    <div class="sun">
+      <center><h2>Sun</h2></center>
+      <img src="images/img-close.png" class="btn btn-exit btn-exit-sun">
+      <img class="sun-mini" src="images/sun-mini.png" width="150px">
+      <table>
+        <caption><center style="color:yellow;">Physical characteristics</center></caption>
+        <tr><td>Equatorial radius </td> <td> 695,700 km</td></tr>
+        <tr><td>Surface area </td> <td> 6.09×10<sup>12</sup> km<sup>2</sup></td></tr>
+        <tr><td>Volume </td> <td> 1.41×10<sup>18</sup> km<sup>3</sup></td></tr>
+        <tr><td>Mass </td> <td> (1.98855±0.00025)×10<sup>30</sup> kg</td></tr>
+        <tr><td>Average density </td>	<td> 1.408 g/cm<sup>3</sup></td></tr>
+        <tr><td>Equatorial surface gravity &nbsp;</td> <td> 274.0 m/s<sup>2</sup></td></tr>
+      </table>
+      <table>
+        <caption><center style="color:yellow;">Orbital characteristics</center></caption>
+        <tr><td>Mean distance from &nbsp;<br>Milky Way core </td>	<td> ≈ 2.7×10<sup>17</sup> km</td></tr>
+        <tr><td>Galactic period </td>	<td> (2.25–2.50)×10<sup>8</sup> yr</td></tr>
+      </table>
+        <div class="settings">
+          <center><b>Style:</b><br>
+          <input type="image" class="sun-text-1" src="images/sun.jpg" width="50px" height="50px">
+          <input type="image" class="sun-text-2" src="images/sun1.jpg" width="50px" height="50px"><br>
+          Size : <input type="range" class="sun-size" min="1" max="5" step="0.1" value="1"></center>
+        </div>
+    </div>
+    <div class="about">
+      <p align="center">Coursework<br>
+      made by Evdokimova Svitlana<br>
+      curator Krasnokuts'ka Inessa Volodymyrivna<br>
+      powered by WebGL, <br>JQuery and Twitter Bootstrap</p>
+    </div>
+    <div class="speed-conteiner" width="300px">
+    <input type="range" class="speed" min="-100" max="100" step="1" value="0">
+</div>
+
+    <script type="text/javascript" src="glMatrix.js"></script>
+    <script type="text/javascript" src="webgl-utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+.menu{
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 100px;
+}
+
+.nav-stacked{
+  display: none;
+  margin-top: 5px;
+}
+
+.btn{
+  width: 100px;
+  font-size: 20px;
+  font-family: 'Merienda', cursive;
+}
+
+
+.btn-exit-sun{
+  width:90px;
+  color:black;
+  position: absolute;
+  left:450px;
+  top: -50px;
+}
+.btn-exit-mercury{
+  width:90px;
+  color:black;
+  position: absolute;
+  left:425px;
+  top: 20px;
+}
+
+.menu-for-object{
+  position: absolute;
+  background-image: url("images/cosmos-1.jpg");
+  left: 0px;
+  bottom: 25px;
+  border-radius: 160px;
+  opacity: 0.4;
+  width:600px;
+  height: 500px;
+  color: white;
+  display: none;
+}
+.mercury{
+  display: none;
+  position: absolute;
+  left: 70px;
+  font-family: 'Merienda', cursive;
+  bottom: -10px;
+  color: white;
+}
+
+.mercury-mini{
+  position: absolute;
+  left: 300px;
+}
+
+.sun{
+  display: none;
+  position: absolute;
+  left: 45px;
+  bottom: 40px;
+  color: white;
+  font-family: 'Merienda', cursive;
+  font-size: 14px;
+}
+
+.back-for-about{
+  position: absolute;
+  background-image: url("images/cosmos-1.jpg");
+  right: 0px;
+  bottom: 35px;
+  border-radius: 25px;
+  opacity: 0.4;
+  width: 320px;
+  height: 110px;
+  color: white;
+  display: none;
+}
+.about{
+  display: none;
+  position: absolute;
+
+  right: 5px;
+  bottom: 30px;
+  color: white;
+  font-family: 'Merienda', cursive;
+  font-size: 14px;
+}
+
+.sun-mini{
+  position: absolute;
+  left: 350px;
+  top: 20px;
+}
+
+.speed{
+  position: absolute;
+  bottom:20px;
+}
+
+.settings{
+    position: relative;
+    top: -110px;
+    left: 300px;
+    width: 200px;
+}
